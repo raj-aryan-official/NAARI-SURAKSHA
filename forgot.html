@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Forgot Password - Naari Suraksha</title>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/1173058386/vector/butterfly-woman-with-leaf-wings-design-inspiration.jpg?s=612x612&w=0&k=20&c=6gpNliw06SNCsJ1-IUgErtnqak3ROFLw0O3nHgMyq58=" alt="Naari Suraksha Logo" class="logo">
+    <div id="container" class="container">
+        <h1>Reset Password</h1>
+        <h3>Enter your email to reset password</h3>
+        <form id="resetForm" class="reset-form">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" 
+                       id="email" 
+                       placeholder="Enter Your Email" 
+                       class="input-field"
+                       required
+                       autocomplete="email">
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn">Send Reset Link</button>
+                <a href="login.html" class="btn-secondary">Back to Login</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Email Sent!</h2>
+            <p>Password reset instructions have been sent to your email.</p>
+            <button class="btn" onclick="window.location.href='login.html'">Back to Login</button>
+        </div>
+    </div>
+
+    <script src="forgot.js"></script>
+</body>
+</html>
